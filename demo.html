@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ↔ Markdown Converter Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .demo-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .demo-content {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HTML ↔ Markdown Converter</h1>
+            <p>Live Demo with Sample Content</p>
+            <a href="index.html" style="display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; margin-top: 10px;">Open Converter →</a>
+        </header>
+
+        <main>
+            <div class="demo-section">
+                <h2>Sample HTML Input</h2>
+                <div class="demo-content">
+&lt;h1&gt;Project Documentation&lt;/h1&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This project demonstrates &lt;strong&gt;HTML to Markdown&lt;/strong&gt; conversion with &lt;em&gt;various formatting&lt;/em&gt; options.&lt;/p&gt;
+&lt;p&gt;Visit our &lt;a href="https://github.com"&gt;GitHub repository&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;blockquote&gt;
+Important: Always test your code before deployment.
+&lt;/blockquote&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML parsing&lt;/li&gt;
+&lt;li&gt;Markdown generation&lt;/li&gt;
+&lt;li&gt;Copy to clipboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Code Example&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;function convert() {
+    return "Hello, World!";
+}&lt;/code&gt;&lt;/pre&gt;
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>Expected Markdown Output</h2>
+                <div class="demo-content">
+# Project Documentation
+
+## Overview
+
+This project demonstrates **HTML to Markdown** conversion with *various formatting* options.
+
+Visit our [GitHub repository](https://github.com) for more information.
+
+> Important: Always test your code before deployment.
+
+### Features
+
+- HTML parsing
+- Markdown generation
+- Copy to clipboard
+
+### Code Example
+
+```
+function convert() {
+    return "Hello, World!";
+}
+```
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>Sample Markdown Input</h2>
+                <div class="demo-content">
+# Getting Started
+
+## Installation
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/example/repo.git
+cd repo
+```
+
+## Usage
+
+1. Open the **index.html** file
+2. Enter your content
+3. Click *Convert*
+
+### Supported Elements
+
+- **Bold text**
+- *Italic text*
+- `Inline code`
+- [Links](https://example.com)
+- Lists and tables
+
+> **Note**: This converter supports most common HTML and Markdown elements.
+
+---
+
+For more information, visit our documentation.
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>Expected HTML Output</h2>
+                <div class="demo-content">
+&lt;h1&gt;Getting Started&lt;/h1&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;First, clone the repository:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/example/repo.git
+cd repo&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Usage&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;index.html&lt;/strong&gt; file&lt;/li&gt;
+&lt;li&gt;Enter your content&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Convert&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Supported Elements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bold text&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Italic text&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Inline code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://example.com"&gt;Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lists and tables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;: This converter supports most common HTML and Markdown elements.&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;For more information, visit our documentation.&lt;/p&gt;
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with HTML, CSS, and JavaScript</p>
+        </footer>
+    </div>
+</body>
+</html>
