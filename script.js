@@ -16,6 +16,45 @@ class HtmlMarkdownConverter {
         // Copy buttons
         document.getElementById('copyMarkdown').addEventListener('click', () => this.copyToClipboard('markdownOutput'));
         document.getElementById('copyHtml').addEventListener('click', () => this.copyToClipboard('htmlOutput'));
+        
+        // Load example content
+        this.loadExampleContent();
+    }
+
+    loadExampleContent() {
+        const exampleHtml = `<h1>Welcome to HTML-Markdown Converter</h1>
+<h2>Features</h2>
+<p>This tool supports <strong>bidirectional conversion</strong> between HTML and Markdown formats.</p>
+<p>Try converting this sample content by clicking the <em>Convert to Markdown</em> button!</p>
+<ul>
+<li>Headers and paragraphs</li>
+<li>Bold and italic formatting</li>
+<li>Lists and links</li>
+<li>Code blocks and more</li>
+</ul>
+<p>Visit <a href="https://github.com">GitHub</a> for more examples.</p>`;
+
+        const exampleMarkdown = `# Getting Started Guide
+
+## Quick Start
+
+Welcome to the **Markdown to HTML** converter!
+
+### Sample Features
+
+- Convert *Markdown* to clean HTML
+- Support for \`inline code\`
+- Handle [links](https://example.com) properly
+- Process lists and formatting
+
+> **Tip**: Click "Convert to HTML" to see this in action!
+
+---
+
+Happy converting! 🚀`;
+
+        document.getElementById('htmlInput').value = exampleHtml;
+        document.getElementById('markdownInput').value = exampleMarkdown;
     }
 
     convertHtmlToMarkdown() {
